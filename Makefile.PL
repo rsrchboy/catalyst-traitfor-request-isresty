@@ -17,7 +17,9 @@ readme_from $master;
 readme_markdown_from $master;
 
 requires 'namespace::autoclean' => '0.09';
-requires 'Catalyst::Controller::Resources' => '0.08';
+requires 'Moose';
+requires 'MooseX::ClassAttribute';
+requires 'Catalyst::TraitFor::Request::REST';
 
 # strictly speaking, we don't absolutely need this...  but we're not going to
 # be very useful without it
